@@ -1,9 +1,12 @@
-<app-navbar></app-navbar>
-<div *ngFor='let nick of quotesArray'>
-    {{nick.id}}
-    {{nick.quote}}
-    {{nick.author}}
-    {{nick.datePosted|date}}
-    {{nick.upvote}}
-    {{nick.downvote}}
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <app-quotes-form (addQuote)="addNewQuote($event)"></app-quotes-form>
+    </div>
+    <div class="col">
+      <div *ngFor='let quote of quotes;let i = index'>
+        <app-quotes-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quotes-details>
+      </div>
+    </div>
+  </div>
 </div>

@@ -2,6 +2,10 @@ import { Quotes } from './quotes';
 
 describe('Quotes', () => {
   it('should create an instance', () => {
-    expect(new Quotes()).toBeTruthy();
+    expect(newQuotes()).toBeTruthy();
   });
 });
+function newQuotes(): any {
+  throw new Error('Function not implemented.');
+}
+

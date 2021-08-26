@@ -1,1 +1,22 @@
-<p>quotes-details works!</p>
+<div class="container">
+<p>author :{{quote.author}}</p>
+<p>Published by :{{quote.person}}</p>
+<p>Date:{{quote.date|date}}</p>
+
+<p>That which does not kill us makes us stronger {{quote.date|date}} </p>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+        <p >Up votes :{{quote.upvote}}</p>
+      <button type="button" class="btn btn-outline-success" (click)="upvote()">Upvote</button>
+    </div>
+    <div class="col">
+        <p>Down votes :{{quote.downvote}}</p>
+      <button type="button" class="btn btn-outline-warning" (click)="downvote()">Downvote</button><br>
+    </div>
+  </div>
+    <button class="btn btn-danger" (click)='delete(true)'> Delete quote</button>
+  
+</div>
+</div>
