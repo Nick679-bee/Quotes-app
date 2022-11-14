@@ -3,7 +3,7 @@
     <div class="col">
       <app-quotes-form (addQuote)="addNewQuote($event)"></app-quotes-form>
     </div>
-    <div class="col">
+    <div class=" col">
       <div *ngFor='let quote of quotes;let i = index'>
         <app-quotes-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quotes-details>
       </div>

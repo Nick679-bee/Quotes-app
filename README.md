@@ -1,6 +1,6 @@
 # Quote generator
 #### Website about a Quote generator project, 24th August 2021
-#### By Nick Mwaura
+#### By Nicholas Mwaura
 ## Description
 We all need encouraging coutes in our everyday lif in order to face the
 challenges we come across with.This is the place where you also give others words of encoragement as you
